@@ -1,11 +1,11 @@
 import React from "react";
 import "./MessageCard.css";
 
-function MessageCard() {
+function MessageCard({mesage_header, message_body}) {
     return (
-        <div className="about-me-card">
-            <h1>Hello, Im Joshnee</h1>
-            <h2>Im a Software Developer</h2>
+        <div className="message-card">
+            <h1>{mesage_header}</h1>
+            <h3>{message_body}</h3>
         </div>
     );
 }

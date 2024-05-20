@@ -1,0 +1,15 @@
+.about-contents {
+    display: flex;
+    min-height: calc(100vh - 100px);
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.about-pic {
+    width: 300px;
+    height: 300px;
+    margin-left: 10px;
+    border-radius: 10px;
+}
