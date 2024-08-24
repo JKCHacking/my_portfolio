@@ -1,4 +1,4 @@
-.header {
+/* .header {
     display: flex;
     justify-content: space-between;
     background-color: #27374D;
@@ -22,4 +22,91 @@
     color: white;
     margin-left: 15px;
     text-decoration: none;
+    display: inline-block;
+    position: relative;
+}
+
+.right-buttons a:hover {
+    color: #007bff;
+}
+
+.right-buttons a:after {
+    width: 0;
+    background: white;
+    height: 3px;
+    transition: all .5s ease-in-out;
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    right: 0;
+}
+
+.right-buttons a.underline:after {
+    width: 100%;
+    left: 0;
+}
+
+.right-buttons a:hover:after {
+    width: 100%;
+    left: 0;
+} */
+
+/* Header container */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #27374D;
+}
+  
+  /* Brand section */
+.brand h1 {
+    margin: 0;
+    font-size: 24px;
+    color: white;
+}
+
+  /* Navigation styles */
+.navigation {
+    display: flex;
+}
+  
+.nav-list {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+  
+.nav-list .nav-link {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    padding-bottom: 5px;
+    position: relative;
+    display: inline-block;
+}
+  
+/* Underline effect */
+.nav-list .nav-link::after {
+    content: "";
+    width: 0;
+    height: 3px;
+    background: white;
+    position: absolute;
+    bottom: -5px;
+    right: 0;
+    transition: all 0.5s ease-in-out;
+}
+  
+.nav-list .nav-link.underline::after {
+    width: 100%;
+    left: 0;
+}
+  
+.nav-list .nav-link:hover::after {
+    width: 100%;
+    left: 0;
 }
